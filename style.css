@@ -1,16 +1,37 @@
 .blue {
-    border: 3px solid blue;
+  animation-name: rainbow;
+  animation-duration: 5s;
+  animation: rainbow 1s linear infinite alternate;
+
+  background-color: blue;
+}
+.blue:hover {
+  background-color: black;
+}
+.purple {
+  border: 3px solid white;
+  background-color: white;
+}
+
+.pix {
+  height: 50px;
+  border: 1px solid white;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: purple;
+  }
+  25% {
     background-color: blue;
-    }
-    .purple {
-    border: 3px solid white;
-    background-color: white;
-    }
-  
-    
-    .pix {
-    height: 50px;
-    border: 1px solid white;
-    }
-    
- 
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
